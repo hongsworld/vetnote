@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, width=720 "/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <title>SnuVet</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquerymobile-1.4.1.css" />    
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>  
+    <script type="text/javascript" src="js/tappable.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquerymobile-1.4.1.js"></script>
+    <script type="text/javascript" src="js/layout.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+  </head>
+  <body>
+<div data-role="page" tabindex="1" class="ui-page ui-page-theme-a ui-page-active" id="main_page">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center white_bold">
+          실습 평가
+        </div>
+      </div>
+      <form action="http://asanapp.com:5000" method="POST" id = "valuation">
+      <div class = "body" id="body">
+        <div class = "date_box"style="background-color:#f4f4f4">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" >
+            피부과
+          </div>
+        </div>
+        <div class = "logs_box" id="logs_box">
+            
+              <div class = "each_log_box top_border no_border_bottom" id ="item_1">
+                <div class = "each_log_left">
+                  <div class = "absolute_center font30_center">
+                    1
+                  </div>
+                </div>
+                <div class = "each_log_left22">
+                  <div class = "absolute_center font30" >
+                    나는 실습 시작 전에 실습 프로그램에 대한 충분한 정보를 얻었다.
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui-field-contain" style="margin:0;">
+                  <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" value="1" >
+                    <label for="radio-choice-1" style=" padding:20px 0px;border-radius:0;">More Bad</label>
+
+                    <input type="radio" name="radio-choice-1" id="radio-choice-2" value="2" >
+                    <label for="radio-choice-2" style=" padding:20px 0px;border-radius:0;">Bad</label>
+
+                    <input type="radio" name="radio-choice-1" id="radio-choice-3" value="3">
+                    <label for="radio-choice-3" style=" padding:20px 0px;border-radius:0;">Normal</label>
+
+                    <input type="radio" name="radio-choice-1" id="radio-choice-4" value="4">
+                    <label for="radio-choice-4" style=" padding:20px 0px;border-radius:0;">Good</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-5" value="5">
+                    <label for="radio-choice-5" style=" padding:20px 0px;border-radius:0;">More Good</label>
+                  </fieldset>
+                </div>  
+              <div class = "each_log_box top_border no_border_bottom" id ="item_2">
+                <div class = "each_log_left">
+                  <div class = "absolute_center font30_center">
+                    2
+                  </div>
+                </div>
+                <div class = "each_log_left22">
+                  <div class = "absolute_center font30" >
+                     실습 기간 동안 충분한 실습 기회와 시간이 주어졌다.
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui-field-contain" style="margin:0;">
+                  <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+
+                    <input type="radio" name="radio-choice-2" id="radio-choice-1" value="1" >
+                    <label for="radio-choice-1" style=" padding:20px 0px;border-radius:0;">More Bad</label>
+
+                    <input type="radio" name="radio-choice-2" id="radio-choice-2" value="2" >
+                    <label for="radio-choice-2" style=" padding:20px 0px;border-radius:0;">Bad</label>
+
+                    <input type="radio" name="radio-choice-2" id="radio-choice-3" value="3">
+                    <label for="radio-choice-3" style=" padding:20px 0px;border-radius:0;">Normal</label>
+
+                    <input type="radio" name="radio-choice-2" id="radio-choice-4" value="4">
+                    <label for="radio-choice-4" style=" padding:20px 0px;border-radius:0;">Good</label>
+                    <input type="radio" name="radio-choice-2" id="radio-choice-5" value="5">
+                    <label for="radio-choice-5" style=" padding:20px 0px;border-radius:0;">More Good</label>
+                  </fieldset>
+                </div>  
+              <div class = "each_log_box top_border no_border_bottom" id ="item_3">
+                <div class = "each_log_left">
+                  <div class = "absolute_center font30_center">
+                    3
+                  </div>
+                </div>
+                <div class = "each_log_left22">
+                  <div class = "absolute_center font30" >
+                     실습 프로그램의 내용이 나의 임상기술을 향상시키는 데에 도움이 되었다.
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui-field-contain" style="margin:0;">
+                  <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+
+                    <input type="radio" name="radio-choice-3" id="radio-choice-1" value="1" >
+                    <label for="radio-choice-1" style=" padding:20px 0px;border-radius:0;">More Bad</label>
+
+                    <input type="radio" name="radio-choice-3" id="radio-choice-2" value="2" >
+                    <label for="radio-choice-2" style=" padding:20px 0px;border-radius:0;">Bad</label>
+
+                    <input type="radio" name="radio-choice-3" id="radio-choice-3" value="3">
+                    <label for="radio-choice-3" style=" padding:20px 0px;border-radius:0;">Normal</label>
+
+                    <input type="radio" name="radio-choice-3" id="radio-choice-4" value="4">
+                    <label for="radio-choice-4" style=" padding:20px 0px;border-radius:0;">Good</label>
+                    <input type="radio" name="radio-choice-3" id="radio-choice-5" value="5">
+                    <label for="radio-choice-5" style=" padding:20px 0px;border-radius:0;">More Good</label>
+                  </fieldset>
+                </div>  
+              <div class = "each_log_box top_border no_border_bottom" id ="item_4">
+                <div class = "each_log_left">
+                  <div class = "absolute_center font30_center">
+                    4
+                  </div>
+                </div>
+                <div class = "each_log_left22">
+                  <div class = "absolute_center font30" >
+                     실습내용과 관련된 자료가 제공되었다.
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui-field-contain" style="margin:0;">
+                  <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+
+                    <input type="radio" name="radio-choice-4" id="radio-choice-1" value="1" >
+                    <label for="radio-choice-1" style=" padding:20px 0px;border-radius:0;">More Bad</label>
+
+                    <input type="radio" name="radio-choice-4" id="radio-choice-2" value="2" >
+                    <label for="radio-choice-2" style=" padding:20px 0px;border-radius:0;">Bad</label>
+
+                    <input type="radio" name="radio-choice-4" id="radio-choice-3" value="3">
+                    <label for="radio-choice-3" style=" padding:20px 0px;border-radius:0;">Normal</label>
+
+                    <input type="radio" name="radio-choice-4" id="radio-choice-4" value="4">
+                    <label for="radio-choice-4" style=" padding:20px 0px;border-radius:0;">Good</label>
+                    <input type="radio" name="radio-choice-4" id="radio-choice-5" value="5">
+                    <label for="radio-choice-5" style=" padding:20px 0px;border-radius:0;">More Good</label>
+                  </fieldset>
+                </div>  
+              <div class = "each_log_box top_border no_border_bottom" id ="item_5">
+                <div class = "each_log_left">
+                  <div class = "absolute_center font30_center">
+                    5
+                  </div>
+                </div>
+                <div class = "each_log_left22">
+                  <div class = "absolute_center font30" >
+                     실습 동안에 충분한 수의 케이스를 볼 수 있었다.
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui-field-contain" style="margin:0;">
+                  <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+
+                    <input type="radio" name="radio-choice-5" id="radio-choice-1" value="1" >
+                    <label for="radio-choice-1" style=" padding:20px 0px;border-radius:0;">More Bad</label>
+
+                    <input type="radio" name="radio-choice-5" id="radio-choice-2" value="2" >
+                    <label for="radio-choice-2" style=" padding:20px 0px;border-radius:0;">Bad</label>
+
+                    <input type="radio" name="radio-choice-5" id="radio-choice-3" value="3">
+                    <label for="radio-choice-3" style=" padding:20px 0px;border-radius:0;">Normal</label>
+
+                    <input type="radio" name="radio-choice-5" id="radio-choice-4" value="4">
+                    <label for="radio-choice-4" style=" padding:20px 0px;border-radius:0;">Good</label>
+                    <input type="radio" name="radio-choice-5" id="radio-choice-5" value="5">
+                    <label for="radio-choice-5" style=" padding:20px 0px;border-radius:0;">More Good</label>
+                  </fieldset>
+                </div>  
+              <div class = "each_log_box top_border no_border_bottom" id ="item_6">
+                <div class = "each_log_left">
+                  <div class = "absolute_center font30_center">
+                    6
+                  </div>
+                </div>
+                <div class = "each_log_left22">
+                  <div class = "absolute_center font30" >
+                     실습 동안에 나의 질문과 요청에 적절한 답과 도움을 얻을 수 있었다.
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui-field-contain" style="margin:0;">
+                  <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+
+                    <input type="radio" name="radio-choice-6" id="radio-choice-1" value="1" >
+                    <label for="radio-choice-1" style=" padding:20px 0px;border-radius:0;">More Bad</label>
+
+                    <input type="radio" name="radio-choice-6" id="radio-choice-2" value="2" >
+                    <label for="radio-choice-2" style=" padding:20px 0px;border-radius:0;">Bad</label>
+
+                    <input type="radio" name="radio-choice-6" id="radio-choice-3" value="3">
+                    <label for="radio-choice-3" style=" padding:20px 0px;border-radius:0;">Normal</label>
+
+                    <input type="radio" name="radio-choice-6" id="radio-choice-4" value="4">
+                    <label for="radio-choice-4" style=" padding:20px 0px;border-radius:0;">Good</label>
+                    <input type="radio" name="radio-choice-6" id="radio-choice-5" value="5">
+                    <label for="radio-choice-5" style=" padding:20px 0px;border-radius:0;">More Good</label>
+                  </fieldset>
+                </div>  
+              <div class = "each_log_box top_border no_border_bottom" id ="item_7">
+                <div class = "each_log_left">
+                  <div class = "absolute_center font30_center">
+                    7
+                  </div>
+                </div>
+                <div class = "each_log_left22">
+                  <div class = "absolute_center font30" >
+                     실습 동안 경험한 것에 전반적으로 만족한다.
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui-field-contain" style="margin:0;">
+                  <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+
+                    <input type="radio" name="radio-choice-7" id="radio-choice-1" value="1" >
+                    <label for="radio-choice-1" style=" padding:20px 0px;border-radius:0;">More Bad</label>
+
+                    <input type="radio" name="radio-choice-7" id="radio-choice-2" value="2" >
+                    <label for="radio-choice-2" style=" padding:20px 0px;border-radius:0;">Bad</label>
+
+                    <input type="radio" name="radio-choice-7" id="radio-choice-3" value="3">
+                    <label for="radio-choice-3" style=" padding:20px 0px;border-radius:0;">Normal</label>
+
+                    <input type="radio" name="radio-choice-7" id="radio-choice-4" value="4">
+                    <label for="radio-choice-4" style=" padding:20px 0px;border-radius:0;">Good</label>
+                    <input type="radio" name="radio-choice-7" id="radio-choice-5" value="5">
+                    <label for="radio-choice-5" style=" padding:20px 0px;border-radius:0;">More Good</label>
+                  </fieldset>
+                </div>  
+              <div class = "each_log_box top_border no_border_bottom" id ="item_8">
+                <div class = "each_log_left">
+                  <div class = "absolute_center font30_center">
+                    8
+                  </div>
+                </div>
+                <div class = "each_log_left22">
+                  <div class = "absolute_center font30" >
+                     실습이 끝난 후 나의 임상역량이 향상되었다.
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui-field-contain" style="margin:0;">
+                  <fieldset data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+
+                    <input type="radio" name="radio-choice-8" id="radio-choice-1" value="1" >
+                    <label for="radio-choice-1" style=" padding:20px 0px;border-radius:0;">More Bad</label>
+
+                    <input type="radio" name="radio-choice-8" id="radio-choice-2" value="2" >
+                    <label for="radio-choice-2" style=" padding:20px 0px;border-radius:0;">Bad</label>
+
+                    <input type="radio" name="radio-choice-8" id="radio-choice-3" value="3">
+                    <label for="radio-choice-3" style=" padding:20px 0px;border-radius:0;">Normal</label>
+
+                    <input type="radio" name="radio-choice-8" id="radio-choice-4" value="4">
+                    <label for="radio-choice-4" style=" padding:20px 0px;border-radius:0;">Good</label>
+                    <input type="radio" name="radio-choice-8" id="radio-choice-5" value="5">
+                    <label for="radio-choice-5" style=" padding:20px 0px;border-radius:0;">More Good</label>
+                  </fieldset>
+                </div>  
+
+
+
+            </div>
+        
+      </div>
+      <div class = "foot">
+        
+            <input type="button" value="Submit" id="submit" style="width:100%; line-height:120px !important; color:#fff;" >
+        
+      </div>
+      </form>
+
+
+    </div>
+  </div>
+</div>
+<section class="semantic-content" id="result_modal"
+tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+<div class="modal-inner" style="height:180px;">
+  <div class = "modal_top">
+    <div class = "logos absolute_center text_center">
+    </div>
+  </div>
+  <div class = "modal_bottom" style="height:90px;">
+    <div class = "black_text absolute_center text_center" id="result_modal2">
+      처리중입니다
+    </div>
+  </div>
+</div>
+
+<!-- Use Hash-Bang to maintain scroll position when closing modal -->
+<a href="#!" class="modal-close" title="Close this modal" id="result_modal_close"             data-dismiss="modal">&times;</a>
+</section>
+    
+<div data-role="page" id="page1">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center">
+          로그북
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "date_box" style="background:#333333">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" style="color:#ffffff; font-weight:bold;">
+            Dermatologic examination
+          </div>
+        </div>
+        <div class = "notice_box" style="height:5px; background:gray;">
+        </div>
+        <div class = "logs_box">
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                1
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Carefully observe dermatologic examination
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                2
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Identify primary and secondary lesions
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "foot2">
+        <div class = "title absolute_center">
+          <input placeholder="Case Number"><a href="#pagetwo">Check</a>
+        </div>
+      </div>
+      <div class = "foot3">
+        <div class = "title absolute_center">
+          <a href="#main_page">돌아가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div data-role="page" id="page2">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center">
+          로그북
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "date_box" style="background:#333333">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" style="color:#ffffff; font-weight:bold;">
+            Skin scraping
+          </div>
+        </div>
+        <div class = "notice_box" style="height:5px; background:gray;">
+        </div>
+        <div class = "logs_box">
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                1
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Choose an appropriate site for a scraping
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                2
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Observe obtaining of a diagnostic skin scraping sample
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                3
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Examine the slide for parasites
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "foot2">
+        <div class = "title absolute_center">
+          <input placeholder="Case Number"><a href="#pagetwo">Check</a>
+        </div>
+      </div>
+      <div class = "foot3">
+        <div class = "title absolute_center">
+          <a href="#main_page">돌아가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div data-role="page" id="page3">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center">
+          로그북
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "date_box" style="background:#333333">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" style="color:#ffffff; font-weight:bold;">
+            Epidermal cytology
+          </div>
+        </div>
+        <div class = "notice_box" style="height:5px; background:gray;">
+        </div>
+        <div class = "logs_box">
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                1
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Make a slide a skin scraping sample
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                2
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Examine the slide for organisms and cellularity
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "foot2">
+        <div class = "title absolute_center">
+          <input placeholder="Case Number"><a href="#pagetwo">Check</a>
+        </div>
+      </div>
+      <div class = "foot3">
+        <div class = "title absolute_center">
+          <a href="#main_page">돌아가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div data-role="page" id="page4">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center">
+          로그북
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "date_box" style="background:#333333">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" style="color:#ffffff; font-weight:bold;">
+            Otoscopic examination
+          </div>
+        </div>
+        <div class = "notice_box" style="height:5px; background:gray;">
+        </div>
+        <div class = "logs_box">
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                1
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+               Perform otoscopic examination
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                2
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Identify abnormal findings
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "foot2">
+        <div class = "title absolute_center">
+          <input placeholder="Case Number"><a href="#pagetwo">Check</a>
+        </div>
+      </div>
+      <div class = "foot3">
+        <div class = "title absolute_center">
+
+
+          <a href="#main_page">돌아가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div data-role="page" id="page5">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center">
+          로그북
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "date_box" style="background:#333333">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" style="color:#ffffff; font-weight:bold;">
+            Otic discharge evaluation
+          </div>
+        </div>
+        <div class = "notice_box" style="height:5px; background:gray;">
+        </div>
+        <div class = "logs_box">
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                1
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+               Obtain sample of otic discharge
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                2
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Make a slide for cytologic evaluationaluatexamine
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                3
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Make a slide for evaluation for parasites and examine
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "foot2">
+        <div class = "title absolute_center">
+          <input placeholder="Case Number"><a href="#pagetwo">Check</a>
+        </div>
+      </div>
+      <div class = "foot3">
+        <div class = "title absolute_center">
+          <a href="#main_page">돌아가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div data-role="page" id="page6">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center">
+          로그북
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "date_box" style="background:#333333">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" style="color:#ffffff; font-weight:bold;">
+           Clean ears
+          </div>
+        </div>
+        <div class = "notice_box" style="height:5px; background:gray;">
+        </div>
+        <div class = "logs_box">
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                1
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Choose appropriate cleaning solution
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                2
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                Clean and drying ear cannals
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+                Case #
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "foot2" >
+        <div class = "title absolute_center">
+          <input placeholder="Case Number"><a href="#pagetwo">Check</a>
+        </div>
+      </div>
+      <div class = "foot3">
+        <div class = "title absolute_center">
+          <a href="#main_page">돌아가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div data-role="page" id="page_qna">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center">
+          로그북
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "date_box" style="background:#333333">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" style="color:#ffffff; font-weight:bold;">
+           Q&A
+          </div>
+        </div>
+        <div class = "notice_box" style="height:5px; background:gray;">
+        </div>
+        <div class = "logs_box">
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                1
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                몇시까지 가야하나요?
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                2
+              </div>
+            </div>
+            <div class = "each_log_left2">
+              <div class = "absolute_center font30">
+                준비물이 무엇인가요? 
+              </div>
+            </div>
+            <div class = "each_log_left3">
+              <div class = "absolute_center font30">
+              </div>
+            </div>
+            <div class = "each_log_left4">
+              <div class = "absolute_center font30">
+                Confirm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "foot2" >
+        <div class = "title absolute_center">
+          <a href="#writeqna">글쓰기</a>
+        </div>
+      </div>
+      <div class = "foot3">
+        <div class = "title absolute_center">
+          <a href="#main_page">돌아가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div data-role="page" id="practice">
+      <div data-role="panel" id="defaultpanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate">
+
+            <div class="ui-panel-inner" style="padding:0;">
+                  <select style="height:80px; font-size:30px;">
+                    <option default="default">피부과</option>
+                    <option default="default">산과</option>
+                    <option default="default">일반외과</option>
+                    <option default="default">정형외과</option>
+                    <option default="default">안과</option>
+                    <option default="default">마취과</option>
+                    <option default="default">내과</option>
+                    <option default="default">방사선과</option>
+                    <option default="default">야생동물의학과</option>
+                  </select>
+              <div class = "each_menu" id="logbook">
+                <div class = "absolute_center font30">
+                  로그북
+                </div>
+              </div>
+              <div class = "each_menu" id="practice_notice">
+                <div class = "absolute_center font30">
+                  실습지침
+                </div>
+              </div>
+              <div class = "each_menu">
+                <div class = "absolute_center font30">
+                  오늘의 식단
+                </div>
+              </div>
+              <div class = "each_menu" style="margin-top:80px;">
+                <div class = "absolute_center font30">
+                  설정
+                </div>
+              </div>
+
+            </div><!-- /content wrapper for padding -->
+
+      </div>
+
+
+    <div class="ui-panel-wrapper">
+      <div class = "head">
+        <a href="#defaultpanel"> <img   class = menu src="img/menu.png"></a>
+        <div class = "title absolute_center">
+          로그북
+        </div>
+      </div>
+      <div class = "body">
+        <div class = "date_box" style="background:#333333">
+          <div class = "date_left">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "date_right">
+            <div class = "absolute_center">
+              
+            </div>
+          </div>
+          <div class = "clear">
+          </div>
+          <div class = "date_center absolute_center" style="color:#ffffff; font-weight:bold;">
+           실습지침
+          </div>
+        </div>
+        <div class = "notice_box" style="height:5px; background:gray;">
+        </div>
+        <div class = "logs_box">
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                1
+              </div>
+            </div>
+            <div class = "each_log_left30">
+              <div class = "absolute_center font30">
+                실습담당자
+              </div>
+            </div>
+            <div class = "each_log_left60">
+                <pre style="margin:0;">"교수 : 황철용
+수의사 : 박설희, 이종명"</pre>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                2
+              </div>
+            </div>
+            <div class = "each_log_left30">
+              <div class = "absolute_center font30">
+                연락처
+              </div>
+            </div>
+            <div class = "each_log_left60">
+                <pre style="margin:0;">02-880-8670</pre>
+            </div>
+          </div>
+          <div class = "each_log_box">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                3
+              </div>
+            </div>
+            <div class = "each_log_left30">
+              <div class = "absolute_center font30">
+                근무시간
+              </div>
+            </div>
+            <div class = "each_log_left60">
+                <pre style=" width:100%; height:100%; word-break:break-word;margin:0;">8:00 - 18:00</pre>
+            </div>
+          </div>
+          <div class = "each_log_box2">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                4
+              </div>
+            </div>
+            <div class = "each_log_left30">
+              <div class = "absolute_center font30">
+                일정표
+              </div>
+            </div>
+            <div class = "each_log_left60">
+                <pre style=" width:100%; height:100%; word-break:break-word;margin:0;">월 화  수  목  금
+"오리엔테이션, 가문진표 작성법
+케이스리뷰" 오전 진료, 케이스리뷰 "진료,
+케이스리뷰"  약욕법, 검이경사용법, 피부병변평가 (구두평가)  오전 진료, 케이스리뷰</pre>
+            </div>
+          </div>
+          <div class = "each_log_box2">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                5
+              </div>
+            </div>
+            <div class = "each_log_left30">
+              <div class = "absolute_center font30">
+                평가항목
+              </div>
+            </div>
+            <div class = "each_log_left60">
+                <pre style=" width:100%; height:100%; word-break:break-word;margin:0;"> "진료참가 성실도 및 태도 (30점)
+Case presentation (10점)   Technical participation, skills, & exam (20점)
+진료진의 종합평가 (20점)
+실습일지 (20점)"</pre>
+            </div>
+          </div>
+          <div class = "each_log_box2">
+            <div class = "each_log_left">
+              <div class = "absolute_center font30">
+                6
+              </div>
+            </div>
+            <div class = "each_log_left30">
+              <div class = "absolute_center font30">
+                참고자료
+              </div>
+            </div>
+            <div class = "each_log_left60">
+                <pre style=" width:100%; height:100%; word-break:break-word;margin:0;">"* Muller & Kirk's Small Animal Dermatology, 7th ed. Saunders, 2012
+* Small Animal Dermatology A Color Atlas and Therapeutic Guide, Saunders, 2001
+Small Animal 
+* Dermatology A color Atlas and Therapeutic Guide, Saunders, 2nd Ed. 
+* 소동물의 피부병학, 원색도보와 치료지침, 한국내과학교수협의회, 2003
+* The 5-minute Veterinary Consult, Clinical Companion, Small Animal Dermatology 
+* BSAVA Manual of Small Animal Dermatology, 2nd Ed. , 2003
+* Allergic skin disease of dogs and cats, 2nd ed, Lloyd et al, 1999 Saunders"</pre>
+            </div>
+          </div>
+          <div class = "bottom_dummy">
+          </div>
+        </div>
+      </div>
+      <div class = "foot3">
+        <div class = "title absolute_center">
+          <a href="#main_page">돌아가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+</div> 
+</html>

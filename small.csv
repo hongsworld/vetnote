@@ -1,0 +1,249 @@
+Carefully perform neurologic examination,1,1
+Identify abnormal findings,1,1
+Use Doppler to measure blood pressure in an awake animal,1,2
+Record systolic blood pressure,1,2
+Set up an ECG machine and place leads correctly on animal for a 6-lead ECG,1,3
+Obtain a diagnostic ECG,1,3
+Interpret a 6-lead ECG correctly,1,4
+Adjust fluid to body condition,1,5
+"Choose appropriate type of fluids for patient
+",1,5
+Calculate the rate at which to administer the solution,1,6
+Manipulate of antitumor drugs,1,7
+Safety management of antitumor drugs,1,7
+Protocols of Chemotherapy,1,7
+Methods of administration according to drugs,1,7
+Perform commercial ELISA kit testing for detecting,1,8
+" - Heartworm infection
+ - Parvo, Corona, Distemper virus infection
+ - FeLV, FIV virus infection
+ - Giardia infection",1,8
+Check anesthetic machine according to the delivery of gases,2,1
+"Select and prepare breathing system, circuit and pollution control",2,1
+Select and prepare monitoring equipment according to the patients,2,1
+Perform preanesthetic evaluation including physical examination,2,2
+Select appropriate drugs at safe and effective doses for the patient(s),2,2
+Calculate doses correctly according to the administration route(s),2,2
+Make anesthesia plan(s) for the patients of hospital,2,2
+Choose appropriate drug(s) for sedation,2,3
+Correctly administer drug(s) to the patient(s),2,3
+Monitor the patient during sedation,2,3
+Recover the patient from sedation,2,3
+Asminister premedications to the patient(s),2,4
+Administer induction agent(s),2,4
+Perform endotracheal intubation,2,4
+Administer inhalation agent(s),2,4
+Calculate and administer fresh gas flow rate(s),2,4
+Perform manual IPPV according to the condition of the patient(s),2,4
+"Measure BT, HR, RR, pulse with several equipment(s)",2,5
+"Evaluate findings from pulse oximetry, ECG, respiratory monitors",2,5
+Assess and adjust depth of anesthesia,2,5
+Ensure general health of the anesthetized and recovering patient(s),2,5
+Respond to complications and emergencies during the anesthetic process,2,5
+Complete anesthesia recording,2,5
+Assess perioperative patient(s) for pain,2,6
+Select appropriate analgesics and effective doses for the patient(s),2,6
+Calculate doses correctly and administer,2,6
+Re-evaluate the patient(s) after analgesic treatment,2,6
+Assess clinical factors to determine appropriateness of euthanasia,2,7
+Ensure ethical and welfare factors are taken into account,2,7
+Maintain and adapt professional approach to the circumstances,2,7
+Handle animals and equipment safely for euthanasia,2,7
+Administer intravenous euthanasia drugs,2,7
+Dispose of cadavers appropriately,2,7
+Speculum is lubricated and gently inserted into the vagina by initially directing it dorsally and then cranially.,3,1
+Exam vestibule and vagina.,3,1
+"Flexible or rigid endoscopes are gently inserted into the vagina by vinitially directing it dorsally and then cranially. (If dogs are aggressive or sensitive, general anesthesia can be needed)",3,2
+Exam the reproductive tract.,3,2
+Part the lips of the vulva and gently insert a swab at a relatively steep angle,3,3
+"After 1-2 inches of the swab have been inserted, the angle of insertion can be altered to roughly 45 degree and insertion continued",3,3
+"When the swab is fully inserted, rotate the end through 2-3 revolutions, which will allow the cotton tip to pick up an adequate load of cells",3,3
+"The swab can then be withdrawn, and smear on glass slide",3,3
+Examine the slide,3,3
+"Initially, the dog's penis is vigorously massaged through the prepuce at the level of the bulbus glandis until a partial erection develops.",3,4
+The prepuce is quickly retracted caudally (pushed back) past the bulbus glandis.,3,4
+Firm constant pressure is applied to the penis behind the bulbus glandis by squeezing the penis between index finger and thumb.,3,4
+Examine semen by microscope or CASA.,3,4
+Perform STT,4,1
+Recognize a normal range and clinical significances,4,1
+Measure IOP,4,2
+Recognize a normal range and clinical significances,4,2
+Perform slit lamp biomicroscopy,4,3
+Identify abnormal findings,4,3
+Perform direct / indirect ophthalmoscopy,4,4
+Identify abnormal findings,4,4
+Prepare and operate dental machinery,4,5
+Prepare and set up the patient for dental treatment,4,5
+Perform scaling,4,6
+Practice the correct use of ultrasonic and  hand instruments,4,6
+Perform polishing,4,7
+Practice the correct use of polisher,4,7
+Identify abnormal findings of the animal,5,1
+Choose appropriate method for procedure,5,1
+"Observe the procedure for the wildlife / exotic animal
+",5,1
+Decide necessity of sedation,5,2
+Choose appropriate site for venipucture,5,2
+Choose appropriate size of needle and syringe,5,2
+Observe obtaining of blood sample suitable for laboratory submission,5,2
+Choose appropriate site for venipucture,5,3
+Choose appropriate size of catheter,5,3
+Prepare site aseptically,5,3
+Observe successful introducing catheter aseptically into vein and secure,5,3
+Choose appropriate site for venipucture,5,4
+Choose appropriate size of needle and syringe and injection site,5,4
+Observe successful administering medication without endangering nearby structures,5,4
+Perform SC injection for one patient at least,5,4
+Choose appropriate method for administration,5,5
+Successfully administer liquid medication,5,5
+Mixing medication with food is excluded,5,5
+Observe successful making blow dart,5,6
+Observe successful performing capture projector and blow dart,5,6
+Perform Blow dart for target once at least,5,6
+Understand the procedure of radio-telemetry,5,7
+Understand the application of transmitter,5,7
+Practice to find the site of the animal (transmitter),5,7
+Perform otoscopic examination (visualization of horizontal ear canal and ear drum),7,1
+"Identify abnormal findings (calcification, narrowed ear canal)
+",7,1
+"Retrieve aural foreign body
+",7,1
+Debride a wound (Describe any abnormal findings),7,2
+Drain an abscess (Smear the exudate & Evaluate the slide),7,2
+Make a skin incision & place a surgical drain,7,2
+Note the strength of the anal sphincter,7,3
+"Note the enlargement of the prostate ventrally, external iliac lymph node dorsally",7,3
+"Note any masses, diverticulum, deviation or herniation in rectum",7,3
+Express anal sacs,7,3
+"Note the length of soft palate, the eversion of the laryngeal saccules, laryngeal collapse or laryngeal paralysis",7,4
+Carefully observe a surgical incision in a patient,7,5
+Observe adequate hemostasis following incision using appropriate methods and causing minimal tissue trauma,7,5
+Carry out hemostasis in the event of superficial hemorrhage,7,5
+Observe appropriate suture material for ligation,7,6
+Carefully observe surgical ligation so that ligatures are secure and no hemorrhage occurs,7,6
+Choose appropriate suture material for tissue closure,7,7
+Observe closure of a surgical wound layer,7,7
+"Perform (assist) ovariohysterectomy in dog or cat (Observe the normal anatomy of ovary, uterus, etcs)",7,8
+Perform (assist) laparotomy in dog or cat (Explore the entire abdomen and describe any abnormalities),7,8
+"Perform simple skin mass removal (Design the excision margins)
+",7,8
+"Describe the gross appearance of mass (location, size, etcs)",7,9
+Obtain incisional / excisional biopsy from superficial tissue (not involving internal organs),7,9
+"Choose and apply bandage appropriate for patient (for head, thorax, abdomen, limb, etc)",7,10
+Bandage stays in place and is not too tight,7,10
+Bandages for intravenous catheters cannot be counted for this requirement,7,10
+Advise clients on re-application of bandages,7,10
+Select materials for post-surgical wounds,7,11
+Select materials for non first-intension healing wounds,7,11
+Manage a surgical drain (Describe the characteristics of exudate & decide appropriate timing of drain removal),7,11
+Fill the microhematocrit tubes and insert clay plug,8,1
+Centrifuge tubes in the appropriate centrifuge for the appropriate length of time,8,1
+Correctly read results of both the PCV and total protein,8,1
+Smear drop of blood on glass slide,8,2
+"Smear should have head, body and feathered edge",8,2
+Smear should have monolayer that is of adequate size to be diagnostic,8,2
+Analysis with the dip stick and the specific gravimeter,8,3
+Centrifuge urine,8,3
+Cover the slide over one drop of urine on glass slide,8,3
+Microscopic evaluation,8,3
+Smear sample on glass slide using any technique deemed appropriate for the sample,8,4
+Smear should be of appropriate thickness to be diagnostic,8,4
+Adjust the sub-stage condenser to achieve the appropriate amount of light,8,5
+Adjust the ocular lenses to focus properly,8,5
+Utilize the low power dry objectives as well as high power oil objectives and be able to switch between them,8,5
+Correctly clean the oil off the oil objective,8,5
+Choose appropriate size needle and syringe or biopsy technique,8,6
+Prepare sample site aseptically,8,6
+Observe successful obtaining of diagnostic quality sample,8,6
+Perform a necropsy examination,8,7
+Recognise normal and common abnormal changes in tissues & organs,8,7
+Collect samples and make arrangements for subsequent analysis,8,7
+Prepare a report of the gross findings,8,7
+Identify reason/s for the consultation,9,1
+Establish rapport with client and animal taking account of particular communication needs,9,1
+Gather relevant information on animals,9,1
+Use appropriate questions to focus history-taking and obtain full and accurate information,9,1
+Summarise the consultation ensuring that the client understands the conclusions you have reached and the next action to be taken,9,2
+Summarise and record relevant case details and history for storage and retrieval by others,9,2
+Use a range of sources of information to obtain a full and accurate case history,9,2
+Provide first aid treatment,9,3
+Recognise common life-threatening and serious conditions and initate appropriate treatment,9,3
+Undertake emergency procedures,9,3
+"Check vital signs (body weight, body temperature, pulse, respiratory rate, pulse)",9,4
+"Ausculatation (lung sound, cardiac rhythm, murmur grade)",9,4
+Body Scoring System (9 levels),9,4
+"Dehydration evaluation (mucosal membrane color, capillary refill time)",9,4
+"Palpation (location and size of lymph nodes, masses)",9,4
+Identify abnormal findings,9,4
+"Heart rhythm, rate, irregularity",9,5
+"Color of Mucous membrane ; pink, pale or cyanotic etc.",9,5
+Pulse of jugular vein and femoral artery,9,5
+Check of fluid in the thorax and abdomen cavity,9,5
+Temperature of extremities,9,5
+Choose appropriately sized needle and syringe or vacutainer needle,9,6
+Observe obtaining of blood sample suitable for laboratory submission,9,6
+Choose appropriately sized needle and syringe or vacutainer needle,9,7
+Observe obtaining of blood sample suitable for laboratory submission,9,7
+Choose appropriately sized needle and syringe or vacutainer needle,9,8
+Observe obtaining of blood sample suitable for laboratory submission,9,8
+Use cephalic or saphenous vein,9,8
+Choose appropriately sized catheter,9,9
+Prepare site aseptically,9,9
+Observe successful introducing catheter aseptically into vein and secure,9,9
+Place and secure an IV catheter for one patient at least,9,9
+Choose appropriate fluid delivery system,9,10
+Assemble fluid delivery system aseptically,9,10
+Calculate and set fluid delivery rate,9,10
+Aseptically maintain delivery system for 24 hours,9,10
+Choose appropriately sized needle and syringe and injection site,9,11
+"Observe successful administering medication by inserting needle into vein, aspirating blood and injecting the medication at an appropriate rate",9,11
+Practice an intravenous injection for  one patient at least,9,11
+Choose appropriately sized needle and syringe and injection site,9,12
+Observe successful administering medication,9,12
+Practice an subcutaneous injection for  one patient at least,9,12
+Choose appropriately sized needle and syringe and injection site,9,13
+Observe successful administering medication without endangering nearby structures,9,13
+Perform IM injection for one patient at least,9,13
+Choose appropriate method for administration,9,14
+Successfully administer medication by pilling or administration of liquid medication,9,14
+Mixing medication with food is excluded,9,14
+Choose appropriate method for administration,9,15
+Successfully administer medication by pilling or administration of liquid medication,9,15
+Mixing medication with food is excluded,9,15
+"Choose appropriate technique for obtaining urine sample
+   - Cystocentesis
+   - Urinary catheter
+   - Manual bladder expression",9,16
+"Fluid & blood: EDTA, Heparin, Plain tubes, Blood culture medium, Sodium citrate",9,17
+"Urine : Plain, boric acid",9,17
+"Microbioloy-Plain, culture swabs",9,17
+"Tissue: Buffered formaline solution.
+",9,17
+Carefully perform orthopedic examination,10,1
+Identify abnormal findings,10,1
+Carefully perform neurological examination,10,2
+Identify abnormal findings,10,2
+Observation to choose and apply bandage appropriate for patient,10,3
+"Robert Jones bandages, spoon splints, soft padded bandages, spica splints, Ehmer slings, Velpeau slings, fiberglass spints",10,3
+"Bandage stays in place and is not too tight
+",10,3
+Choose appropriate physiotherapy methods for patients,10,4
+"Therapeutic exercises, acupunctures, electrical stimulations, laser therapy, ultrasounds, thermotherapy",10,4
+Perform appropriate physiotherapy for patients with neurologic / musculoskeletal lesions,10,4
+"Preparation of surgical patient (withholding food, voiding, clipping, scrubbing, draping)",10,5
+"Preparation of surgical team (scrub clothes, surgical scrub, gowning, gloving)",10,5
+Sterilization of surgical equipment (autoclaved and EO sterilized surgical pack),10,5
+Keep the aseptic envirnment during surgery,10,5
+Distinguish the surgical instruments on the proposes,10,6
+Observe the surgical grip,10,6
+Assist with orthopedic surgical procedure,10,7
+Observe any anatomical abnormalities,10,7
+Choose appropriate surgical instrument for each surgical procedure,10,7
+Identify primary and secondary lesions,11,1
+Observe obtaining of a diagnostic skin scraping sample,11,2
+Examine the slide for parasites,11,2
+Examine the slide for organisms and cellularity,11,3
+Identify abnormal findings,11,4
+Make a slide for cytologic evaluationaluatexamine,11,5
+Make a slide for evaluation for parasites and examine,11,5
+Clean and drying ear cannals,11,6
