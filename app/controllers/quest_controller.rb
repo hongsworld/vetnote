@@ -14,27 +14,15 @@ class QuestController < ApplicationController
   end
 
   def small
-    quest_id = params[:quest_id]
-    pointer = 0
-    var a = 0
-    Smallquest.all.each do |s|
-      if a == s.content
-      else
-        pointer+=1
-      end
-      a = s.content
-
-      if pointer == params[:quest_id]
-        break
-      end
-    end
-
-    smallquests = quest.smallquests.all
+    quest_id = params[:questId]
+    smallquests = Quest.find(quest_id).smallquests.all
+    large_title = Quest.find(quest_id).content
     title = Array.new
     smallquests.each do |s|
       title << s.content
     end
-    data = {:title => title}
+    error_code = 1
+    data = {:title => title, :error_code => error_code, :large_title => large_title}
     render :json => data.to_json
 
   end

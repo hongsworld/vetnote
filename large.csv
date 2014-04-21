@@ -1,95 +1,95 @@
-content,major_id
-Dermatologic examination,11
-Skin scraping,11
-Epidermal cytology,11
-Otoscopic examination,11
-Otic discharge evaluation,11
-Clean ears,11
-Neurologic examination,1
-Measure Indirect Blood Pressure,1
-Perform ECG,1
-Interpret ECG,1
-Select the Fluid,1
-Calculate Constant Rate Infusion,1
-Cancer therapeutic procedure,1
-ELISA kit testing for detecting the infectious disease,1
-Prepare and check anesthetic and monitoring machine(s),2
-Make anesthetic plan(s),2
-Sedate the patient(s),2
-Perform anesthesia of the patient(s),2
-Maintain and monitor the patient(s) during anesthetic process,2
-Recognise and manage perioperative pain,2
-Euthanasia,2
-Vaginoscopy using a vaginal speculum or endoscopy - Female dog,3
-Vaginal endoscopy - Female dog,3
-Vaginal smear - Female dog or cat,3
-Semen collection - Male dog,3
-Schirmer tear test,4
-Intraocular pressure,4
-Slit lamp biomicroscopy,4
-Direct / Indirect ophthalmoscopy,4
-Dental care and treatment,4
-Scaling,4
-Polishing,4
-Anesthesia / Administration / Practice,5
-Blood Sample Collection,5
-Place and secure an intravenous [intraosseous] catheter,5
-Subcutaneous injection,5
-Administer oral medication,5
-Capture projector and Blow dart,5
-Radio telemetry,5
-Understand basics of and operate the diagnostic X-ray equipment,6
-Understand basics of ultrasonography,6
-Utilize the radiographic exposure factors to obtain diagnostic radiographs,6
-Understand and evaluate the radiographic quality,6
-Recognize and correct the radiographic artifacts,6
-Understand and utilize the radiographic positioning of routine anatomic areas,6
-Understand basic principles of other imaging modalities including CT and MRI,6
-Understand and apply the radiation safety measures,6
-"Understand basics of radiographic evaluation and interpret the topic areas of cardiac and non-cardiac thorax, abdomen, GI, musculoskeletal, neuroradiology and special procedures. Effectively communicate radiographic findings in writing and verbally",6
-Generate appropriate differential DX lists for radiographic abnormalities in light of the clinical presentation,6
-Appropriately manage cases in light of radiographic findings to include follow-up diagnostics and therapy,6
-"Integrate history, signalment, imaging, diagnosis and pathophysiology of case",6
-Understand the role of imaging in case management - strengths and weaknesses,6
-Otoscopic examination,7
-Wound management,7
-Rectal palpation,7
-Laryngeal examination,7
-Surgical incision and hemostasis,7
-Surgical ligation,7
-Surgical placement,7
-Surgical procedure,7
-Biopsy,7
-Apply bandage,7
-Apply & manage dressings and drains,7
-Measure PCV and Total Protein with a microhematocrit tube,8
-Make a diagnostic blood smear (must be evaluated by clinical pathology faculty member or staff),8
-Make a diagnostic urinalysis (must be evaluated by clinical pathology faculty member or staff),8
-Make a diagnostic smear of a fine needle aspirate sample (must be evaluated by clinical pathology faculty member or staff),8
-Correctly operate a microscope (must be evaluated by clinical pathology faculty member or staff),8
-Perform fine needle aspiration or biopsy of tissue,8
-Conduct post mortem examination,8
-Gathering information from the patient(s),9
-Summarize information,9
-Emergency care and treatment,9
-Basic physical examination,9
-Cardiologic physical examination,9
-Jugular venipuncture - canine,9
-Jugular venipuncture - feline,9
-Peripheral venipuncture,9
-Place and secure an intravenous catheter,9
-Set up and maintain IV fluid delivery system,9
-Intravenous injection,9
-Subcutaneous injection,9
-Intramuscular injection,9
-Administer oral medication - Canine,9
-Administer oral medication - Feline,9
-Obtain urine sample using appropriate technique,9
-Handle and label collected samples safely and collectly select sample tubes and transport methods,9
-Orthopedic examination,10
-Neurological examination,10
-Observation to apply bandages used in veterinary orthopedics,10
-Physiotherapy,10
-Surgical asepsis,10
-Surgical instruments,10
-Surgical techniques,10
+id,content,major_id
+1,Neurologic examination,1
+2,Measure Indirect Blood Pressure,1
+3,Perform ECG,1
+4,Interpret ECG,1
+5,Select the Fluid,1
+6,Calculate Constant Rate Infusion,1
+7,Cancer therapeutic procedure,1
+8,ELISA kit testing for detecting the infectious disease,1
+9,Prepare and check anesthetic and monitoring machine(s),2
+10,Make anesthetic plan(s),2
+11,Sedate the patient(s),2
+12,Perform anesthesia of the patient(s),2
+13,Maintain and monitor the patient(s) during anesthetic process,2
+14,Recognise and manage perioperative pain,2
+15,Euthanasia,2
+16,Vaginoscopy using a vaginal speculum or endoscopy - Female dog,3
+17,Vaginal endoscopy - Female dog,3
+18,Vaginal smear - Female dog or cat,3
+19,Semen collection - Male dog,3
+20,Schirmer tear test,4
+21,Intraocular pressure,4
+22,Slit lamp biomicroscopy,4
+23,Direct / Indirect ophthalmoscopy,4
+24,Dental care and treatment,4
+25,Scaling,4
+26,Polishing,4
+27,Anesthesia / Administration / Practice,5
+28,Blood Sample Collection,5
+29,Place and secure an intravenous [intraosseous] catheter,5
+30,Subcutaneous injection,5
+31,Administer oral medication,5
+32,Capture projector and Blow dart,5
+33,Radio telemetry,5
+34,Understand basics of and operate the diagnostic X-ray equipment,6
+35,Understand basics of ultrasonography,6
+36,Utilize the radiographic exposure factors to obtain diagnostic radiographs,6
+37,Understand and evaluate the radiographic quality,6
+38,Recognize and correct the radiographic artifacts,6
+39,Understand and utilize the radiographic positioning of routine anatomic areas,6
+40,Understand basic principles of other imaging modalities including CT and MRI,6
+41,Understand and apply the radiation safety measures,6
+42,"Understand basics of radiographic evaluation and interpret the topic areas of cardiac and non-cardiac thorax, abdomen, GI, musculoskeletal, neuroradiology and special procedures. Effectively communicate radiographic findings in writing and verbally",6
+43,Generate appropriate differential DX lists for radiographic abnormalities in light of the clinical presentation,6
+44,Appropriately manage cases in light of radiographic findings to include follow-up diagnostics and therapy,6
+45,"Integrate history, signalment, imaging, diagnosis and pathophysiology of case",6
+46,Understand the role of imaging in case management - strengths and weaknesses,6
+47,Otoscopic examination,7
+48,Wound management,7
+49,Rectal palpation,7
+50,Laryngeal examination,7
+51,Surgical incision and hemostasis,7
+52,Surgical ligation,7
+53,Surgical placement,7
+54,Surgical procedure,7
+55,Biopsy,7
+56,Apply bandage,7
+57,Apply & manage dressings and drains,7
+58,Measure PCV and Total Protein with a microhematocrit tube,8
+59,Make a diagnostic blood smear (must be evaluated by clinical pathology faculty member or staff),8
+60,Make a diagnostic urinalysis (must be evaluated by clinical pathology faculty member or staff),8
+61,Make a diagnostic smear of a fine needle aspirate sample (must be evaluated by clinical pathology faculty member or staff),8
+62,Correctly operate a microscope (must be evaluated by clinical pathology faculty member or staff),8
+63,Perform fine needle aspiration or biopsy of tissue,8
+64,Conduct post mortem examination,8
+65,Gathering information from the patient(s),9
+66,Summarize information,9
+67,Emergency care and treatment,9
+68,Basic physical examination,9
+69,Cardiologic physical examination,9
+70,Jugular venipuncture - canine,9
+71,Jugular venipuncture - feline,9
+72,Peripheral venipuncture,9
+73,Place and secure an intravenous catheter,9
+74,Set up and maintain IV fluid delivery system,9
+75,Intravenous injection,9
+76,Subcutaneous injection,9
+77,Intramuscular injection,9
+78,Administer oral medication - Canine,9
+79,Administer oral medication - Feline,9
+80,Obtain urine sample using appropriate technique,9
+81,Handle and label collected samples safely and collectly select sample tubes and transport methods,9
+82,Orthopedic examination,10
+83,Neurological examination,10
+84,Observation to apply bandages used in veterinary orthopedics,10
+85,Physiotherapy,10
+86,Surgical asepsis,10
+87,Surgical instruments,10
+88,Surgical techniques,10
+89,Dermatologic examination,11
+90,Skin scraping,11
+91,Epidermal cytology,11
+92,Otoscopic examination,11
+93,Otic discharge evaluation,11
+94,Clean ears,11

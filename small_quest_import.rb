@@ -5,12 +5,12 @@ csv_text = File.read('./small.csv')
 
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
-   major = Major.find(row[1])
-   puts major.name
-   q = major.quests.first(row[2].to_i).last.smallquests.new
-   q.content = row[0]
-   q.save
-   puts q
+   s = Smallquest.new
+   s.id = row[0]
+   s.content = row[1]
+   s.quest_id = row[2]
+   s.save
+   puts s.content
    puts "--------------------"
 end
 
