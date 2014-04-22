@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, width=720, target-densitydpi=320" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <title>SnuVet</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <script type="text/javascript" src="js/tappable.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+</head>
+<body>
+<div class = "wrap">
+  <div data-role="page" id="index">
+    <div class = "page-wrap">
+      <div class = "temp">
+      </div>
+      <div class ="body2">
+        <div class = "date_box">
+          <div class = "date_box_lt">
+          </div>
+          <div class = "date_box_ct">
+            <div class = "date_txt absolute_center" id="datepicker">
+              April 8 (Wed)
+            </div>
+
+
+          </div>
+          <div class = "date_box_rt">
+          </div>
+        </div>
+        <div class = "notice_box">
+          <div class = "notice_lt">
+            notice
+          </div>
+          <div class = "notice_ct">
+            공지사항입니다.
+          </div>
+          <div class = "notice_rt">
+          </div>
+        </div>
+        <div class = "content_box" id="content_box">
+
+
+
+          <div class = "list_box" id="target2">
+            <div class = "list_rt red">
+            </div>
+            <div class = "list_lt">
+              1
+            </div>
+            <div class = "list_ct">
+              this is sample quest.
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class ="foot" id="qna">
+        <div class = "foot_qna absolute_center">
+          Q&A
+        </div>
+      </div>
+    </div> <!-- page wrap -->
+  </div> <!-- page index-->
+
+
+
+  <div data-role="page" id="menu">
+    <div class = "page-wrap">
+      <div class ="body2">
+        <div class = "date_box">
+          <!--
+          <div class = "date_box_lt">
+          </div>
+          -->
+          <div class = "date_box_ct">
+            <div class = "date_txt absolute_center" id="datepicker">
+              이주의 식단
+            </div>
+
+
+          </div>
+          <!--
+          <div class = "date_box_rt">
+          </div>
+          -->
+        </div>
+        <div class = "notice_box">
+          <div class = "notice_lt">
+            notice
+          </div>
+          <div class = "notice_ct">
+            공지사항입니다.
+          </div>
+          <div class = "notice_rt">
+          </div>
+        </div>
+        <div class = "content_box" id="menu_box">
+
+
+
+          <div class = "list_box" id="target2">
+            <div class = "list_rt red">
+            </div>
+            <div class = "list_lt">
+              1
+            </div>
+            <div class = "list_ct">
+              this is sample quest.
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class ="foot" id="qna">
+        <div class = "foot_qna absolute_center">
+          Q&A
+        </div>
+      </div>
+    </div><!-- page wrap -->
+  </div><!-- page menu-->
+
+
+
+  <div data-role="page" id="detail_quest">
+    <div class = "page-wrap">
+      <div class ="body2">
+        <div class = "date_box">
+          <div class = "date_box_lt" data-rel="back">
+          </div>
+          <div class = "date_box_ct_of_detail">
+            <div class = "date_txt_of_detail absolute_center" id="detail_title_box">
+              Loading
+            </div>
+
+          </div>
+        </div>
+        <div class = "detail_bar">
+        </div>
+        <div class = "content_box" id="detail_content_box">
+          <!--
+          <div class = "list_box_of_detail">
+            <div class = "list_lt_of_detail">
+              1
+            </div>
+            <div class = "list_ct_of_detail">
+              Carefully observe dermatologic
+              examination
+            </div>
+          </div>
+          -->
+          <div class = "camera_box" id="camera">
+            <div id="dropbox" class="span6 offset3 dropbox">
+              <label>
+                <form enctype="multipart/form-data" action="https://api.imgur.com/3/upload" method="post">
+                  <input id="image" name="image" type="file" class="file" onchange="upload(this, '#dropbox')" multiple />
+                </form>
+              </label>
+              <button class="camera_ic" onclick="$('#image').click()"></button>
+            </div>
+
+          </div>
+        </div>
+        <div class ="foot">
+          <div class = "case_box absolute_center">
+            <div class = "case_number">
+              <div class = "case_number_txt absolute_center">
+                case number
+              </div>
+            </div>
+            <div class = "case_input">
+              <input class = "case_input">
+            </div>
+            <div class = "case_submit">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- page wrap -->
+  </div><!-- page page2-->
+
+  <div data-role="page" id="qnapage">
+    <div class = "page-wrap">
+      <div class ="body2">
+        <div class = "date_box">
+          <div class = "date_box_lt">
+          </div>
+          <div class = "date_box_ct_of_detail">
+            <div class = "date_txt_of_detail absolute_center" id="each_qna_name">
+              Q&A Forum
+            </div>
+
+          </div>
+        </div>
+        <div class = "detail_bar">
+        </div>
+        <div class = "content_box">
+          <div class = "list_box_of_detail_qna">
+            <div class = "list_ct_of_detail_qna" id="each_qna_content">
+              로딩중입니다
+            </div>
+          </div>
+        </div>
+        <div class ="foot">
+          <!--
+          <div class = "case_box absolute_center">
+            <div class = "case_number">
+              <div class = "case_number_txt absolute_center">
+                case number
+              </div>
+            </div>
+            <div class = "case_input">
+              <input class = "case_input">
+            </div>
+            <div class = "case_submit">
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </div><!-- page wrap -->
+  </div><!-- page qnapage-->
+
+  <div data-role="page" id="qnadetail">
+    <div class = "page-wrap">
+      <div class ="body2">
+        <div class = "date_box">
+          <div class = "date_box_lt">
+          </div>
+          <div class = "date_box_ct_of_detail">
+            <div class = "date_txt_of_detail absolute_center" id="each_qna_name">
+              Q&A Forum
+            </div>
+
+          </div>
+        </div>
+        <div class = "detail_bar">
+        </div>
+        <div class = "content_box">
+          <div class = "list_box_of_detail_qna">
+            <div class = "list_ct_of_detail_qna" id="each_qna_content">
+              로딩중입니다
+            </div>
+          </div>
+        </div>
+        <div class ="foot">
+          <!--
+          <div class = "case_box absolute_center">
+            <div class = "case_number">
+              <div class = "case_number_txt absolute_center">
+                case number
+              </div>
+            </div>
+            <div class = "case_input">
+              <input class = "case_input">
+            </div>
+            <div class = "case_submit">
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </div><!-- page wrap -->
+  </div><!-- page qnadetail-->
+
+  <div data-role="page" id="syllabus_page">
+    <div class = "page-wrap">
+      <div class ="body2">
+        <div class = "date_box">
+          <div class = "date_box_lt">
+          </div>
+          <div class = "date_box_ct_of_detail">
+            <div class = "date_txt_of_detail absolute_center">
+              Syllabus
+            </div>
+
+          </div>
+        </div>
+        <div class = "detail_bar">
+        </div>
+        <div class = "content_box" id="content_list">
+          <div id = "fake_content">
+          </div>
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              1
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+              실습담당
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus"><div class = "text-padding">교수: 황철용
+              수의사: 박설희, 이종명
+              </div>
+            </div>
+            <div class = "clear"></div>
+          </div>
+
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              2
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+              연락처
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus"><div class = "text-padding">02-880-8670
+              </div>
+            </div>
+            <div class = "clear"></div>
+
+          </div>
+
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              3
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+              근무시간
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus"><div class = "text-padding">8:00-18:00
+              </div>
+            </div>
+            <div class = "clear"></div>
+          </div>
+
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              4
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+              일정표
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus">
+              <table>
+                <tr>
+                  <td>Mon</td>
+                  <td>Wed </td>
+                  <td>Tue </td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                </tr>
+                <tr>
+                  <td>오리엔테이션, 가문진표 작성법 </td>
+                  <td>오전 진료, 케이스리뷰</td>
+                  <td>진료, 케이스리뷰</td>
+                  <td>약욕법, 검이경사용법, 피부병변평가</td>
+                  <td>오전 진료, 케이스리뷰</td>
+                </tr>
+              </table>
+            </div>
+            <div class = "clear"></div>
+          </div>
+
+
+
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              5
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+              일과시간
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus">
+              <table>
+                <tr>
+                  <td>8:00 </td>
+                  <td>출근 </td>
+                </tr>
+                <tr>
+                  <td>08:30-09:00</td>
+                  <td>아침조회</td>
+                </tr>
+                <tr>
+                  <td>09:00-12:00</td>
+                  <td>오전진료</td>
+                </tr>
+                <tr>
+                  <td>12:00-13:00</td>
+                  <td>점심</td>
+                </tr>
+                <tr>
+                  <td>13:00-17:00</td>
+                  <td>오후 진료</td>
+                </tr>
+                <tr>
+                  <td>17:00-18:00</td>
+                  <td>케이스리뷰</td>
+                </tr>
+                <tr>
+                  <td>18:00</td>
+                  <td>퇴근</td>
+                </tr>
+              </table>
+            </div>
+            <div class = "clear"></div>
+          </div>
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              6
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+                실습목표 
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus"><div class = "text-padding">실제 환자의 문제점을 파악하고 구체적으로 기술할 수 있는 능력을 배양하며, 문제 해결을 위한 진단과정과 치료과정에 관한 전반적 진료행위를 통해 실제 피부과영역의 진료능력을 향상함을 최종 목표로 삼는다.
+              </div>
+            </div>
+            <div class = "clear"></div>
+          </div>
+
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              7
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+                추가<br>기초교육
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus"><div class = "text-padding">"1) 가문진표 작성법 (첫 월요일)
+                 본 과에 내원한 환자들의 병력 및 식습관등 기초적인 자료를 수집하는 초기 진료단계로 피부과에서 미리 작성된 가문진표 항목의 의의와 가문진 방법 및 기록법에 대해 교육 받으며 교육 후에는 직접 초진 환자들의 가문진을 담당한다. 
+                                                                      
+                 2) 피부병변 평가 (목요일)
+                    일차, 이차 피부병변의 특징을 실제 환자 사진을 통해 숙지하며 진료기록으로 정확히 기록할 수 있는 능력을 배양한다. 교육 후에는 구두평가가 실시된다.
+                                                                       
+                    3) 검이경 사용법 및 검사법 (목요일)
+                     검이경 사용법을 익히고 검사소견을 바탕으로 진단하는 방법을 익힌다."
+              </div>
+            </div>
+            <div class = "clear"></div>
+          </div>
+
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              8
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+                평가항목
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus"><div class = "text-padding">"진료참가 성실도 및 태도 (30점)
+                Case presentation (10점)   Technical participation, skills, & exam (20점)
+                진료진의 종합평가 (20점)
+                실습일지 (20점)"
+              </div>
+            </div>
+            <div class = "clear"></div>
+          </div>
+
+
+          <div class = "list_box_of_syllabus">
+            <div class = "list_lt_of_syllabus">
+              <div class = "text-top-padding" style="color:#fff:">
+              9
+              </div>
+            </div>
+            <div class = "list_ct_of_syllabus">
+              <div class = "text-top-padding">
+                참고서적 
+              </div>
+            </div>
+            <div class = "list_rt_of_syllabus"><div class = "text-padding">"1) Muller & Kirk's Small Animal Dermatology, 7th ed. Saunders, 2012
+                2) Small Animal Dermatology A Color Atlas and Therapeutic Guide, Saunders, 2001
+                3) Small Animal Dermatology A color Atlas and Therapeutic Guide, Saunders, 2nd Ed. 
+                4) 소동물의 피부병학, 원색도보와 치료지침, 한국내과학교수협의회, 2003
+                5) The 5-minute Veterinary Consult, Clinical Companion, Small Animal Dermatology 
+                6) BSAVA Manual of Small Animal Dermatology, 2nd Ed. , 2003
+                7) Allergic skin disease of dogs and cats, 2nd ed, Lloyd et al, 1999 Saunders"
+              </div>
+            </div>
+            <div class = "clear"></div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+        <div class ="foot">
+          <div class = "case_box absolute_center">
+            <div class = "case_number">
+              <div class = "case_number_txt absolute_center">
+                name
+              </div>
+            </div>
+            <div class = "case_input">
+              <input class = "case_input" id="name_qna">
+            </div>
+            <div class = "case_submit" id="submit_qna">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- page wrap -->
+  </div><!-- page qnadetail-->
+
+  <div data-role="page" id="qnadetail">
+    <div class = "page-wrap">
+
+    </div><!-- page wrap -->
+  </div><!-- page qnadetail-->
+
+  
+  <div data-role="page" id="qnadetail">
+    <div class = "page-wrap">
+
+    </div><!-- page wrap -->
+  </div><!-- page qnadetail-->
+
+</div>
+</body>
+</html>
+
+
+

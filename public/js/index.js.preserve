@@ -17,10 +17,10 @@ $(document).ready(function (){
           if (data.error_code ==1) {
             $(".major_circle-active").each(function(index) { $(this).removeClass("major_circle-active").addClass("major_circle") })
             $(target).children(".major_circle").removeClass("major_circle").addClass("major_circle-active")
-            $("#main_frame").contents().find("#content_box").html("")
+            $("#content_box").html("")
             for (i = 0; i < data.title.length; i++) {
-              $("#main_frame").contents().find("#content_box").append(" " +
-                "<div class = 'list_box' id='each_quest' value='"+ data.quest_id[i] + "'>"  +
+              $("#content_box").append(" " +
+                "<div class = 'list_box' id='quest" + data.quest_id[i] + "'>"  +
                   "<div class = 'list_rt red'>" +
                   "</div>" +
                   "<div class = 'list_lt'>" +
@@ -31,47 +31,48 @@ $(document).ready(function (){
                   "</div>" +
                 "</div>" +
               " ")
-            }
-            $( "#leftpanel_index" ).panel( "close" );
-            document.getElementById('main_frame').src = "main_frame.html#index"
-          } else {
-            alert(data.error_msg);
-          }
-        }
-      });
-    }
-  });
+              tappable("#quest" + data.quest_id[i], {
+                onTap: function(e, target){
+                  window.localStorage.setItem("selectedQuest", $(target).attr("id").substr(5,3));
+                  $.ajax({
+                    url: "/quest/small" ,
+                    type: "POST",
+                    data: {
+                      questId:$(target).attr("id").substr(5,3)
+                    },
+                    success: function(data) {
+                      location.href= "#index"
+                      if (data.error_code ==1) {
+                        $("#detail_content_box").html("")
+                        $("#detail_title_box").text(data.large_title)
+                        for (i = 0; i < data.title.length; i++) {
+                          $("#detail_content_box").append(" " +
+                            "<div class = 'list_box_of_detail'>" +
+                             "<div class = 'list_lt_of_detail'>" +
+                                (parseInt(i)+1) +
+                              "</div>" +
+                              "<div class = 'list_ct_of_detail'>" +
+                                 data.title[i] +
+                              "</div>" +
+                            "</div>" +
+                        "")}
+                        location.href= "#page2"
+                      } else {
+                        alert(data.error_msg);
+                      }
+                    }
+                  });
+                }
+              });
 
-  tappable("#each_quest", {
-    onTap: function(e, target){
-      window.localStorage.setItem("selectedQuest", $(target).attr("value"));
-      $.ajax({
-        url: "/quest/small" ,
-        type: "POST",
-        data: {
-          questId:$(target).attr("value")
-        },
-        success: function(data) {
-          if (data.error_code ==1) {
-            $("#detail_content_box").html("")
-            $("#detail_title_box").text(data.large_title)
-            for (i = 0; i < data.title.length; i++) {
-              $("#detail_content_box").append(" " +
-                "<div class = 'list_box_of_detail'>" +
-                 "<div class = 'list_lt_of_detail'>" +
-                    (parseInt(i)+1) +
-                  "</div>" +
-                  "<div class = 'list_ct_of_detail'>" +
-                     data.title[i] +
-                  "</div>" +
-                "</div>" +
-            "")}
-            location.href= "#detail_quest"
+            }
           } else {
             alert(data.error_msg);
           }
         }
       });
+
+      
     }
   });
 
@@ -83,10 +84,10 @@ $(document).ready(function (){
       data: {
       },
       success: function(data) {
-        $("#main_frame").contents().find("#menu_box").html("")
+        $("#menu_box").html("")
         if (data.error_code ==1) {
           for (i = 0; i < data.day_array.length; i++) {
-            $("#main_frame").contents().find("#menu_box").append(" " +
+            $("#menu_box").append(" " +
             "<div class = 'list_box'>" +
               "<div class = 'list_lt'>" +
                  data.day_array[i] +
@@ -110,7 +111,7 @@ $(document).ready(function (){
             "</div>" +
             " ")
           }
-          document.getElementById('main_frame').src = "main_frame.html#menu"
+          location.href= "#menu"
         } else {
           alert(data.error_msg);
         }
@@ -226,11 +227,10 @@ $(document).ready(function (){
     location.href= "#page3"
   });
   tappable('#syllabus', function(){
-    document.getElementById('main_frame').src = "main_frame.html#syllabus_page"
-    $("#rightpannel_index").pannel("close");
+    location.href= "#syllabus_page"
   });
   tappable('#logbook', function(){
-    document.getElementById('main_frame').src = "main_frame.html#index"
+    location.href= "#index"
   });
   tappable('#menu_lt_index', function(){
     $( "#leftpanel_index" ).panel( "open");
