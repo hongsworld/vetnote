@@ -13,3 +13,9 @@ major.each do |m|
   a.name = m
   a.save
 end
+
+u = User.new
+u.name = "Tester"
+u.save
+
+

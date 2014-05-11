@@ -1,3 +1,4 @@
+#coding:utf-8
 class QuestController < ApplicationController
   def large
     major = Major.find(params[:selectedMajorId])
@@ -21,9 +22,43 @@ class QuestController < ApplicationController
     smallquests.each do |s|
       title << s.content
     end
+    major = Quest.find(quest_id).major.name
     error_code = 1
-    data = {:title => title, :error_code => error_code, :large_title => large_title}
+    data = {:title => title, :error_code => error_code, :large_title => large_title, :major => major}
+    logger.info (data)
     render :json => data.to_json
 
   end
+
+  def record_case
+#    quest = Quest.find(params[:q_id])
+#    pf = Photofile.new
+    photo = params[:image]
+    uq = Userquest.new
+    logger.info (photo)
+    logger.info (params[:number])
+#    pf.pet_quest_id = pq.id
+    savedname = SecureRandom.hex(5) + ".jpg"
+    uq.picture_url = savedname
+    uq.case_number = params[:number]
+    uq.quest_id = params[:quest_id]
+    uq.save
+    img_name = savedname
+    img_magick = Magick::Image.from_blob(params[:image].read).first
+    img_magick.format = "JPEG"
+    img_magick.resize_to_fill!(700, 700){
+        self.gravity = Magick::CenterGravity
+    }
+    f = File.open(Rails.root.join("public", "img", img_name), "wb")
+    f.write(img_magick.to_blob)
+    f.close
+#    pq.done_picture_path = img_name
+#    pq.done_memo = params[:done_memo]
+#    pq.save
+    error_code = 1
+    data = {:error_code => error_code}
+    render :json => data.to_json
+    
+  end
+  
 end

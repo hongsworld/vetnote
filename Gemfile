@@ -8,8 +8,8 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 #NOKOGIRI for MENU
 gem 'nokogiri'
-
-
+#사진
+gem 'rmagick', :require => 'RMagick'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

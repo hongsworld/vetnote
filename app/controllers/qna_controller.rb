@@ -17,13 +17,20 @@ class QnaController < ApplicationController
 
   def write
     major = Major.where(:id => params[:selectedMajor]).last
+
+    logger.info (params[:selectedMajor])
+    logger.info (params[:selectedMajor])
+    logger.info (params[:selectedMajor])
+    logger.info (params[:selectedMajor])
+
     q = major.qnas.new
-    q.user_name = params[:name]
+    q.user_name = "Tester"
     q.content = params[:content]
     q.save
     error_code = 1
     number = major.qnas.all.count
     data = {:error_code => error_code, :number => number}
+
     render :json => data.to_json
   end
 
